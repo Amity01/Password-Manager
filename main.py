@@ -35,8 +35,8 @@ def password_generator():
     password_list = []
 
     password_list += [random.choice(letters) for i in range(nr_letters)]
-    password_list += [random.choice(letters) for i in range(nr_numbers)]
-    password_list += [random.choice(letters) for i in range(nr_symbols)]
+    password_list += [random.choice(numbers) for i in range(nr_numbers)]
+    password_list += [random.choice(symbols) for i in range(nr_symbols)]
 
     random.shuffle(password_list)
 
